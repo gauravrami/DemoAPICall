@@ -75,6 +75,9 @@ extension LoginVC {
     }
     
     func goToAfterLoginVC() {
+        UserDefaults.standard.set(true, forKey: kIsLoggedIn)
+        UserDefaults.standard.synchronize()
+        
         if let destinationVC = self.storyboard?.instantiateViewController(withIdentifier: "AfterLoginNavigation") as? UINavigationController,
             let appDelegate = UIApplication.shared.delegate as? AppDelegate {
             

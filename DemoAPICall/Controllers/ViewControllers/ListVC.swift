@@ -46,6 +46,9 @@ extension ListVC {
     }
     
     func goToAppStartUp() {
+        UserDefaults.standard.set(false, forKey: kIsLoggedIn)
+        UserDefaults.standard.synchronize()
+        
         if let destinationVC = self.storyboard?.instantiateViewController(withIdentifier: "AppStartUpNavigation") as? UINavigationController,
             let appDelegate = UIApplication.shared.delegate as? AppDelegate {
             
