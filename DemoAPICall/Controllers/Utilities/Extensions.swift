@@ -41,3 +41,27 @@ extension UIViewController {
 }
 
 
+extension String {
+    
+    //Triming Functions
+    func trimWhiteSpaces() -> String {
+        return self.trimmingCharacters(in: CharacterSet.whitespaces)
+    }
+    func trimAllSpace() -> String {
+        return self.replacingOccurrences(of: " ", with: "")
+    }
+    func trimNewLines() -> String {
+        return self.trimmingCharacters(in: CharacterSet.newlines)
+    }
+    func trimWhiteSpacesAndNewLines() -> String {
+        return self.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+    }
+}
+
+extension CALayer {
+    func setBorder(_ width: CGFloat, color : UIColor, cornerRadius : CGFloat) {
+        self.borderWidth = width
+        self.borderColor = color.cgColor
+        self.cornerRadius = cornerRadius
+    }
+}

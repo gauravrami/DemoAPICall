@@ -19,18 +19,46 @@ class ListVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.intialSetup()
+        self.initialSetup()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 }
 
-//MARK: - Get Data From Server.
+
+//MARK: - Button Actions / Button Tap Events.
 extension ListVC {
-    func intialSetup() {
+    @IBAction func btnLogoutTapped(_ sender: UIBarButtonItem) {
+        let alertVC = UIAlertController(title: "Logout", message: "Are you sure, you want to logout?", preferredStyle: .alert)
+        let actionLogout = UIAlertAction(title: "Logout", style: .default) { (action : UIAlertAction) in
+            self.goToAppStartUp()
+        }
+        let actionCancel = UIAlertAction(title: "Cancel", style: .cancel) { (action : UIAlertAction) in
+        }
+        
+        alertVC.addAction(actionLogout)
+        alertVC.addAction(actionCancel)
+        self.present(alertVC, animated: true, completion: nil)
+    }
+    
+    func goToAppStartUp() {
+        if let destinationVC = self.storyboard?.instantiateViewController(withIdentifier: "AppStartUpNavigation") as? UINavigationController,
+            let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+            
+            appDelegate.window?.rootViewController = destinationVC
+            appDelegate.window?.makeKeyAndVisible()
+        }
+    }
+    
+}
+
+//MARK: - Initial Setup
+extension ListVC {
+    func initialSetup() {
         self.tblView.dataSource = self
         self.tblView.delegate = self
         

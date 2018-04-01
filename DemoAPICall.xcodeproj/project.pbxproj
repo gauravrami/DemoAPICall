@@ -17,6 +17,9 @@
 		BD566382207159CB00723FC5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD566381207159CB00723FC5 /* Extensions.swift */; };
 		BD56638520715DEB00723FC5 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD56638420715DEB00723FC5 /* ListCell.swift */; };
 		BD566387207166D100723FC5 /* Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD566386207166D100723FC5 /* Methods.swift */; };
+		BDE670B520717B7C0017C355 /* Pref.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE670B320717B7C0017C355 /* Pref.swift */; };
+		BDE670B620717B7C0017C355 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE670B420717B7C0017C355 /* Image.swift */; };
+		BDE670B8207186D50017C355 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE670B7207186D50017C355 /* LoginVC.swift */; };
 		FBAF4E171654E73CEB64CE48 /* Pods_DemoAPICall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E0A84CC8DB31BCD53BED0AA /* Pods_DemoAPICall.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +40,9 @@
 		BD566381207159CB00723FC5 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		BD56638420715DEB00723FC5 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		BD566386207166D100723FC5 /* Methods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Methods.swift; sourceTree = "<group>"; };
+		BDE670B320717B7C0017C355 /* Pref.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pref.swift; sourceTree = "<group>"; };
+		BDE670B420717B7C0017C355 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		BDE670B7207186D50017C355 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				BD56637E2071592E00723FC5 /* ListVC.swift */,
+				BDE670B7207186D50017C355 /* LoginVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -147,6 +154,8 @@
 		BD566380207159CB00723FC5 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				BDE670B420717B7C0017C355 /* Image.swift */,
+				BDE670B320717B7C0017C355 /* Pref.swift */,
 				BD566386207166D100723FC5 /* Methods.swift */,
 				BD566381207159CB00723FC5 /* Extensions.swift */,
 			);
@@ -297,7 +306,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD566382207159CB00723FC5 /* Extensions.swift in Sources */,
+				BDE670B620717B7C0017C355 /* Image.swift in Sources */,
 				BD566387207166D100723FC5 /* Methods.swift in Sources */,
+				BDE670B520717B7C0017C355 /* Pref.swift in Sources */,
+				BDE670B8207186D50017C355 /* LoginVC.swift in Sources */,
 				BD56637F2071592E00723FC5 /* ListVC.swift in Sources */,
 				BD56637D20713A6D00723FC5 /* ListBean.swift in Sources */,
 				BD56638520715DEB00723FC5 /* ListCell.swift in Sources */,
