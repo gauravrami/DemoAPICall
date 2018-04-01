@@ -1,12 +1,9 @@
 //
 //  AppDelegate.swift
 //  DemoAPICall
-//
-//  Created by GAURAV RAMI on 01/04/18.
-//  Copyright © 2018 GAURAV RAMI. All rights reserved.
-//
 
 import UIKit
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        IQKeyboardManager.sharedManager().enable = true
         return true
     }
 
