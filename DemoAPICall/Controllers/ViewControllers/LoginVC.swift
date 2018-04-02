@@ -23,14 +23,17 @@ class LoginVC: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        self.navigationController?.navigationBar.isHidden = true
+    }
 
 }
 
 //MARK: - Initial Data Loading.
 extension LoginVC {
     func initialSetup() {
-       //self.viewBorder.layer.setBorder(2.0, color: UIColor.black, cornerRadius: 20.0)
         self.btnSignIn.layer.setBorder(1.0, color: UIColor.black, cornerRadius: 5.0)
     }
 }

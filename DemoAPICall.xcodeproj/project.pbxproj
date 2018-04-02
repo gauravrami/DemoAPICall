@@ -20,6 +20,7 @@
 		BDE670B520717B7C0017C355 /* Pref.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE670B320717B7C0017C355 /* Pref.swift */; };
 		BDE670B620717B7C0017C355 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE670B420717B7C0017C355 /* Image.swift */; };
 		BDE670B8207186D50017C355 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE670B7207186D50017C355 /* LoginVC.swift */; };
+		BDF6744A20720D0D00221065 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF6744920720D0D00221065 /* SignUpVC.swift */; };
 		FBAF4E171654E73CEB64CE48 /* Pods_DemoAPICall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E0A84CC8DB31BCD53BED0AA /* Pods_DemoAPICall.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		BDE670B320717B7C0017C355 /* Pref.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pref.swift; sourceTree = "<group>"; };
 		BDE670B420717B7C0017C355 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		BDE670B7207186D50017C355 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		BDF6744920720D0D00221065 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			children = (
 				BD56637E2071592E00723FC5 /* ListVC.swift */,
 				BDE670B7207186D50017C355 /* LoginVC.swift */,
+				BDF6744920720D0D00221065 /* SignUpVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				BD566382207159CB00723FC5 /* Extensions.swift in Sources */,
 				BDE670B620717B7C0017C355 /* Image.swift in Sources */,
 				BD566387207166D100723FC5 /* Methods.swift in Sources */,
+				BDF6744A20720D0D00221065 /* SignUpVC.swift in Sources */,
 				BDE670B520717B7C0017C355 /* Pref.swift in Sources */,
 				BDE670B8207186D50017C355 /* LoginVC.swift in Sources */,
 				BD56637F2071592E00723FC5 /* ListVC.swift in Sources */,
